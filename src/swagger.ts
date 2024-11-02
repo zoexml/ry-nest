@@ -3,7 +3,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 
 export function setupSwagger(app: INestApplication) {
   const options = new DocumentBuilder()
-    .setTitle('Nest.js example API')
+    .setTitle('ry-nest')
     .setDescription('真正的大师永远怀着一颗学徒的心！')
     .setVersion('1.0')
     .addBearerAuth()

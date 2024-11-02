@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { TypeOrmModule } from '@nestjs/typeorm'
-// import { UserModule } from './modules/user/user.module'
+
+import { UserModule } from './modules/system/user/user.module' // 系统管理 - 用户管理
 // import { AuthModule } from './modules/auth/auth.module'
 // import config from './config'
 
@@ -27,7 +28,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
       autoLoadEntities: true, // 自动加载实体配置，forFeature()注册的每个实体都自己动加载
     }),
     // 业务模块...
-    // UserModule,
+    UserModule,
     // AuthModule
   ],
   controllers: [],
