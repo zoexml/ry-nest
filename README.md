@@ -71,6 +71,41 @@ $ mau deploy
 
 With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
+## 步骤说明
+
+4. $ nest -h 查看 nest 子命令
+   $ nest g mo xxx 生成 xxx module
+   $ nest g co xxx 生成 xxx controller
+   $ nest g mo -p admin xxx 在 admin 下生成 xxx module
+   $ nest g co -p admin xxx 生成 xxx controller
+   $ nest g app admin 生成子应用(admin)用于区分 admin 与 web 层
+
+   # admin与web层通用一个数据库
+
+   $ nest g lib db
+
+5. 使用热重载 pnpm i --save-dev webpack-node-externals run-script-webpack-plugin webpack
+6. pnpm i --save class-validator class-transformer 管道验证
+
+# 提示时输入 -- 生成 libs 文件夹包含 db 数据库模块
+
+$ @libs
+
+$ npm i nestjs-typegoose @typegoose/typegoose
+
+# 新建 models 文件夹，管理数据库不同模块的 model
+
+# 内置 swagger
+
+$ npm install @nestjs/swagger swagger-ui-express
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:
