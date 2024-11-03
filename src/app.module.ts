@@ -3,7 +3,9 @@ import { ConfigModule } from '@nestjs/config'
 import { TypeOrmModule } from '@nestjs/typeorm'
 
 import { UserModule } from './modules/system/user/user.module' // 系统管理 - 用户管理
+import { RoleModule } from './modules/system/role/role.module' // 系统管理 - 角色管理
 // import { AuthModule } from './modules/auth/auth.module'
+
 // import config from './config'
 
 @Module({
@@ -29,6 +31,7 @@ import { UserModule } from './modules/system/user/user.module' // 系统管理 -
     }),
     // 业务模块...
     UserModule,
+    RoleModule,
     // AuthModule
   ],
   controllers: [],

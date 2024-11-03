@@ -4,6 +4,7 @@ import { BaseEntity } from 'src/common/entities/base'
 @Entity('sys_user', {
   comment: '用户信息表',
 })
+
 export class UserEntity extends BaseEntity {
   @PrimaryGeneratedColumn({ type: 'int', name: 'user_id', comment: '用户ID' })
   public userId: number
