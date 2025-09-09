@@ -24,8 +24,8 @@ export class UserEntity extends BaseEntity {
   @Column({ type: 'varchar', name: 'email', length: 50, default: '', comment: '邮箱' })
   public email: string
 
-  @Column({ type: 'varchar', name: 'phonenumber', default: '', length: 11, comment: '手机号码' })
-  public phonenumber: string
+  @Column({ type: 'varchar', name: 'phone', default: '', length: 11, comment: '手机号码' })
+  public phone: string
 
   //0男 1女 2未知
   @Column({ type: 'char', name: 'sex', default: '0', length: 1, comment: '性别' })

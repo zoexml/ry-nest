@@ -22,7 +22,7 @@ import { RoleModule } from './modules/system/role/role.module' // 系统管理 -
       host: '127.0.0.1', // 数据库的连接地址host
       port: 3306, // 数据库的端口 3306
       username: 'root', // 连接账号
-      password: 'root123456', // 连接密码
+      password: '123456', // 连接密码
       database: 'ry_nest', // 连接的表名
       retryDelay: 500, // 重试连接数据库间隔
       retryAttempts: 10, // 允许重连次数
